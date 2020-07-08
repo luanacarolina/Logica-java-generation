@@ -24,7 +24,7 @@ public class Ex4 {
                 numeroMulheresNervosas++;
             } if(opcoes==3 && sexo==2){
                 numeroHomensAgressivos++;
-            } if (idade >= 40 && opcoes == 2 && sexo==1 || sexo==2) {
+            } if (idade >= 40 && opcoes == 2 ) {
                 numeroPessoasNervosas40++;
             }if(idade<=18 && opcoes==1){
                 numerosPessoasCalmas18++;
