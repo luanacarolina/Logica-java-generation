@@ -10,23 +10,23 @@ public class Ex4 {
         int contador = 1,numeroPessoasCalmas=0,numeroMulheresNervosas=0
                 ,numeroHomensAgressivos=0, numeroPessoasNervosas40=0, numerosPessoasCalmas18=0;
 
-        while (contador<=150){
+        while (contador<=3){
             System.out.println("Digite sua idade "+contador);
             int idade = scan.nextInt();
             System.out.println("Digite 1-Feminino/2-Masculino");
             int sexo = scan.nextInt();
-            System.out.println("Digite de acordo com as opções 1-Calma(o)/ 2-Nervosa(o) / 3-Agressiva(o)");
+            System.out.println("Entre com seu fator psicológico de acordo com as opções: 1-Calma(o)/ 2-Nervosa(o) / 3-Agressiva(o)");
             int opcoes = scan.nextInt();
 
             if(opcoes==1){
                 numeroPessoasCalmas++;
-            }else if(opcoes==2 && sexo==1){
+            }if(opcoes==2 && sexo==1){
                 numeroMulheresNervosas++;
-            }else if(opcoes==3 && sexo==2){
+            } if(opcoes==3 && sexo==2){
                 numeroHomensAgressivos++;
-            } else if (idade >= 40 && opcoes == 2 && sexo==1 || sexo==2) {
+            } if (idade >= 40 && opcoes == 2 && sexo==1 || sexo==2) {
                 numeroPessoasNervosas40++;
-            }else if(idade<=18 && opcoes==1){
+            }if(idade<=18 && opcoes==1){
                 numerosPessoasCalmas18++;
             }
 
